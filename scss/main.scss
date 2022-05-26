@@ -1,0 +1,62 @@
+@import 'products', 'servisec', 'nav.scss', 'variables.scss';
+
+body{
+    background-color: rgb(243, 243, 241);
+    height: 60vh;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    
+}
+
+h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+
+
+header{
+    
+    
+    width: 100%;
+    padding: 0;
+    line-height: 0;
+   
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    width: 100%;
+}
+.home{
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 10rem;
+
+    &-btn{
+        background-color: rgb(74, 148, 74);
+    color:white;
+    border: none;
+    border-radius: 10%;
+    height: 1.7rem;
+    }
+
+    &-info{
+        color: green;
+        &-span{
+            color: black;
+        }
+    }
+    .img{
+        display: block;
+        object-fit: cover;
+        grid-column-start: 3;
+        grid-column-end: 8;
+       
+        
+    }
+}

@@ -1,0 +1,51 @@
+.nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    &-logo{
+        display: flex;
+        justify-content:left;
+        margin-top: 2rem;
+        font-size: 24px;
+    
+    }
+   
+}
+.menu-nav{
+    display: flex;
+    justify-content: right;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    list-style: none;
+    &__link{
+        text-decoration: none;
+        color: black;
+        font-weight: 100;
+    }
+    
+    &__item{
+        padding-left: 2rem;
+        
+        
+
+        &.active >a{
+            color: brown;
+        }
+    }
+}
+
+.nav-btn{
+    display: table;
+    float: right;
+    
+    margin-top:-1rem;
+    margin-right: 1rem;
+    background-color: rgb(74, 148, 74);
+    color:white;
+    border: none;
+    border-radius: 10%;
+    height: 1.9rem;
+
+}
